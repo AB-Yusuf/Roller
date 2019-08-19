@@ -12,14 +12,30 @@ namespace Roller.Controllers
         // GET: Customer
         public ActionResult Index()
         {
-            var customer = new List<Customer>()
-            {
-                 new Customer {Name = "John Smith"},
-                new Customer {Name = "Dele Ali"},
-                new Customer {Name = "Abu Dhaby"}
+            var customers = GetCustomers();
 
-            };
+            return View(customers);
+        }
+
+        public ActionResult Details(int id)
+        {
+            var customer = GetCustomers().SingleOrDefault(c => c.Id == id);
+
+            if (customer == null)
+                return HttpNotFound();
+
             return View(customer);
+        }
+
+        private IEnumerable<Customer> GetCustomers()
+        {
+            return new List<Customer>
+            {
+                new Customer {Id = 1, Name = "John Smith"},
+                new Customer {Id = 2, Name = "Dele Ali"},
+                new Customer {Id = 3, Name = "Abu Dhaby"}
+            };
+
         }
     }
 }
