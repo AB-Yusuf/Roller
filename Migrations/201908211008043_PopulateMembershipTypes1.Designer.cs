@@ -7,13 +7,13 @@ namespace Roller.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.2.0-61023")]
-    public sealed partial class NavigationMembershipName : IMigrationMetadata
+    public sealed partial class PopulateMembershipTypes1 : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(NavigationMembershipName));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(PopulateMembershipTypes1));
         
         string IMigrationMetadata.Id
         {
-            get { return "201908191617226_NavigationMembershipName"; }
+            get { return "201908211008043_PopulateMembershipTypes1"; }
         }
         
         string IMigrationMetadata.Source

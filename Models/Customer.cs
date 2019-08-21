@@ -23,6 +23,6 @@ namespace Roller.Models
 
         public  byte MembershipTypeId { get; set; }
 
-        public MembershipType MembershipName { get; set; }
+        //public MembershipType MembershipName { get; set; }
     }
 }

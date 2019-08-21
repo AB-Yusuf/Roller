@@ -7,13 +7,13 @@ namespace Roller.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.2.0-61023")]
-    public sealed partial class AddMembershipName : IMigrationMetadata
+    public sealed partial class seedingMembershipType : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(AddMembershipName));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(seedingMembershipType));
         
         string IMigrationMetadata.Id
         {
-            get { return "201908191552400_AddMembershipName"; }
+            get { return "201908211119271_seedingMembershipType"; }
         }
         
         string IMigrationMetadata.Source
