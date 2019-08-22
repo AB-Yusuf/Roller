@@ -21,7 +21,15 @@ namespace Roller.Controllers
 
             return View(movies);
 
+        }
 
+        public ActionResult Details()
+        {
+            
+            return View();
+
+
+            
         }
     }
 }
