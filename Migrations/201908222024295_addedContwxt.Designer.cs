@@ -7,13 +7,13 @@ namespace Roller.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.2.0-61023")]
-    public sealed partial class addingFormToDatabase : IMigrationMetadata
+    public sealed partial class addedContwxt : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(addingFormToDatabase));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(addedContwxt));
         
         string IMigrationMetadata.Id
         {
-            get { return "201908220437366_addingFormToDatabase"; }
+            get { return "201908222024295_addedContwxt"; }
         }
         
         string IMigrationMetadata.Source

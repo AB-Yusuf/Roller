@@ -1,5 +1,6 @@
 namespace Roller.Migrations
 {
+    using Roller.Models;
     using System;
     using System.Data.Entity;
     using System.Data.Entity.Migrations;
@@ -18,6 +19,16 @@ namespace Roller.Migrations
 
             //  You can use the DbSet<T>.AddOrUpdate() helper extension method 
             //  to avoid creating duplicate seed data.
+            context.MembershipTypes.AddOrUpdate(
+              p => p.DiscountRate,
+              new MembershipType { signUpFee = 200, DurationInMonths = 6, DiscountRate = 10 }
+
+            );
+            context.Customers.AddOrUpdate(
+              p => p.Name,
+              new Customer { Name = "Abubkar", SubscribeToNewsLetter = false, MembershipTypeId = 1 },
+               new Customer { Name = "Kaka", SubscribeToNewsLetter = true, MembershipTypeId = 1 }
+            );
         }
     }
 }

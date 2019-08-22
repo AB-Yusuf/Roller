@@ -175,33 +175,13 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201908191201031_InitialModel.cs" />
-    <Compile Include="Migrations\201908191201031_InitialModel.Designer.cs">
-      <DependentUpon>201908191201031_InitialModel.cs</DependentUpon>
+    <Compile Include="Migrations\201908221957164_newInit.cs" />
+    <Compile Include="Migrations\201908221957164_newInit.Designer.cs">
+      <DependentUpon>201908221957164_newInit.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201908191223225_AddSubscribetoNewsLetterToCustomer.cs" />
-    <Compile Include="Migrations\201908191223225_AddSubscribetoNewsLetterToCustomer.Designer.cs">
-      <DependentUpon>201908191223225_AddSubscribetoNewsLetterToCustomer.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201908191256516_AddMembershipType.cs" />
-    <Compile Include="Migrations\201908191256516_AddMembershipType.Designer.cs">
-      <DependentUpon>201908191256516_AddMembershipType.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201908191343130_PopulateMembershipTypes.cs" />
-    <Compile Include="Migrations\201908191343130_PopulateMembershipTypes.Designer.cs">
-      <DependentUpon>201908191343130_PopulateMembershipTypes.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201908211008043_PopulateMembershipTypes1.cs" />
-    <Compile Include="Migrations\201908211008043_PopulateMembershipTypes1.Designer.cs">
-      <DependentUpon>201908211008043_PopulateMembershipTypes1.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201908211119271_seedingMembershipType.cs" />
-    <Compile Include="Migrations\201908211119271_seedingMembershipType.Designer.cs">
-      <DependentUpon>201908211119271_seedingMembershipType.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201908220437366_addingFormToDatabase.cs" />
-    <Compile Include="Migrations\201908220437366_addingFormToDatabase.Designer.cs">
-      <DependentUpon>201908220437366_addingFormToDatabase.cs</DependentUpon>
+    <Compile Include="Migrations\201908222024295_addedContwxt.cs" />
+    <Compile Include="Migrations\201908222024295_addedContwxt.Designer.cs">
+      <DependentUpon>201908222024295_addedContwxt.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -296,26 +276,11 @@
     <Content Include="Scripts\jquery-3.3.1.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201908191201031_InitialModel.resx">
-      <DependentUpon>201908191201031_InitialModel.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201908221957164_newInit.resx">
+      <DependentUpon>201908221957164_newInit.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201908191223225_AddSubscribetoNewsLetterToCustomer.resx">
-      <DependentUpon>201908191223225_AddSubscribetoNewsLetterToCustomer.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201908191256516_AddMembershipType.resx">
-      <DependentUpon>201908191256516_AddMembershipType.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201908191343130_PopulateMembershipTypes.resx">
-      <DependentUpon>201908191343130_PopulateMembershipTypes.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201908211008043_PopulateMembershipTypes1.resx">
-      <DependentUpon>201908211008043_PopulateMembershipTypes1.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201908211119271_seedingMembershipType.resx">
-      <DependentUpon>201908211119271_seedingMembershipType.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201908220437366_addingFormToDatabase.resx">
-      <DependentUpon>201908220437366_addingFormToDatabase.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201908222024295_addedContwxt.resx">
+      <DependentUpon>201908222024295_addedContwxt.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

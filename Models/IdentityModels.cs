@@ -22,10 +22,10 @@ namespace Roller.Models
     {
 
         public DbSet<Customer> Customers { get; set; }
-
+        public DbSet<MembershipType> MembershipTypes { get; set; }
 
         public ApplicationDbContext()
-            : base("DefaultConnection", throwIfV1Schema: false)
+            : base("rollerappdb", throwIfV1Schema: false)
         {
         }
 

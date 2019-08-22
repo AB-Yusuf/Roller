@@ -9,8 +9,6 @@ namespace Roller.Models
     public class Customer
     {
 
-
-
         public int Id { get; set; }
 
         [Required]
@@ -21,10 +19,10 @@ namespace Roller.Models
 
         public MembershipType MembershipType { get; set; }
 
-        public string TypeOfMembership { get; set; }
+        //public string TypeOfMembership { get; set; }
 
 
-        public  byte MembershipTypeId { get; set; }
+        public  int MembershipTypeId { get; set; }
 
         //public MembershipType MembershipName { get; set; }
     }
