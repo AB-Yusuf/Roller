@@ -199,6 +199,10 @@
     <Compile Include="Migrations\201908211119271_seedingMembershipType.Designer.cs">
       <DependentUpon>201908211119271_seedingMembershipType.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201908220437366_addingFormToDatabase.cs" />
+    <Compile Include="Migrations\201908220437366_addingFormToDatabase.Designer.cs">
+      <DependentUpon>201908220437366_addingFormToDatabase.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Customer.cs" />
@@ -306,6 +310,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201908211119271_seedingMembershipType.resx">
       <DependentUpon>201908211119271_seedingMembershipType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201908220437366_addingFormToDatabase.resx">
+      <DependentUpon>201908220437366_addingFormToDatabase.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

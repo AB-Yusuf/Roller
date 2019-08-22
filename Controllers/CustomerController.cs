@@ -36,7 +36,7 @@ namespace Roller.Controllers
 
             };
 
-           return View(viewModel);
+           return View("CustomerForm", viewModel);
         }
 
         //private List<NewCustomerViewModel> GetMembershipType()
@@ -82,8 +82,11 @@ namespace Roller.Controllers
             var customer = _contexxt.Customers.SingleOrDefault(c => c.Id == id);
             if (customer == null)
                 return HttpNotFound();
-
-            return View("CustomerForm");
+            var viewModel = new NewCustomerViewModel
+            {
+                customer = customer,
+            };
+            return View("CustomerForm", viewModel);
 
         }
 
